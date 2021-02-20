@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+    <link rel="stylesheet" href="/css/new.min.css" />
+    <script src="https://unpkg.com/lucia"></script>
+
+    <title>Aiden Bai</title>
+  </head>
+  <body>
+    <!-- Hack Club Flag -->
+    <a href="https://hackclub.com/"
+      ><img
+        style="position: absolute; top: 0; left: 10px; border: 0; width: 256px; z-index: 999"
+        src="https://assets.hackclub.com/flag-orpheus-top.svg"
+        alt="Hack Club"
+    /></a>
+
+    <header>
+      <h1>Aiden Bai</h1>
+      <a href="https://github.com/aidenybai">Github</a> /
+      <a href="https://twitter.com/bigbrainaiden">Twitter</a> /
+      <a href="mailto:aiden.bai05@gmail.com">Email</a>
+    </header>
+
+    <div>
+      <h2>Bad Cookie Clicker</h2>
+      <div l-state="{ count: localStorage.count || 0 }">
+        <button
+          style="font-size: 75px"
+          @click="localStorage.count = ++count"
+          l-text="'u have ' + count + ' cookies 🍪'"
+        ></button>
+        <small><i l-text="'omnom' + 'nom'.repeat(count)"></i></small>
+      </div>
+    </div>
+  </body>
+</html>
